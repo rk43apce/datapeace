@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-
+import { Link } from "react-router-dom";
 
 export default class Table extends Component {
 
@@ -29,9 +29,13 @@ export default class Table extends Component {
                         users.map(user=>{
                      
                            return( 
-                           
-                                <tr key={user.id}>                              
-                                    <td>{user.first_name} </td>
+                                
+                                <tr key={user.id}>    
+                                    <td>
+                                        <Link to={`/user/1`}>
+                                            {user.first_name}&nbsp;
+                                        </Link>               
+                                     </td>
                                     <td>{user.last_name}</td>
                                     <td>{user.company_name}</td>
                                     <td>{user.city}</td>                                  

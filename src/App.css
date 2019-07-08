@@ -6,6 +6,11 @@
 .fa-bars{
   font-size: 25px !important;
 }
+
+.fa-arrow-left{
+  font-size: 25px !important;
+}
+
 .input {
   background-color: transparent;
   border: none;

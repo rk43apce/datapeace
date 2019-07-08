@@ -1,17 +1,13 @@
 import React from 'react';
 import './App.css';
-import User from './component';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Header from './component/header';
 import 'font-awesome/css/font-awesome.min.css';
-
-
+import { Routes } from './component/routes';
 
 function App() {
   return (
-    <div className="App">
-        <Header/>
-        <User/>  
+    <div className="App">        
+        <Routes/>
     </div>
   );
 }

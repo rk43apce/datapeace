@@ -4,6 +4,9 @@ import Table from './table';
 import Search from './search';
 import Pagination from './pagination';
 import Loader from './loader';
+import Header from './header'
+
+
 
 
 export default class User extends Component {
@@ -70,11 +73,12 @@ export default class User extends Component {
             let perPageUsers = users.slice(indexOfFirstUser, indexOfLastUser);
 
         return(
-            <div>
-            <Loader loader={loader}/>
-            
-           <div className="container"> 
+            <div>            
+                <Loader loader={loader}/> 
+                <Header navIcon={'fa fa-bars'}/>           
+                <div className="container"> 
                 <div className="card mt-5">
+                   
                     <div className="card-body">
                         <div className="row">
                             <div className="col-md-6">
@@ -100,7 +104,7 @@ export default class User extends Component {
                     </div>
                 </div>
            </div>
-           </div>
+            </div>
         )
     }
 
