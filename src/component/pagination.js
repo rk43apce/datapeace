@@ -19,8 +19,8 @@ export default class Pagination extends Component{
             <ul className='pagination justify-content-center' >
                
                 {pageNumbers.map(number => (
-                    <li key={number} className='page-item'>                        
-                        <a  href='#' onClick={()=>this.props.setCurrentPage(number)}  className='page-link'>
+                    <li key={number} className= {`page-item ${(number == currentPage ? 'active' : '')}`}>                        
+                        <a  href='#' onClick={()=>this.props.setCurrentPage(number)}  className='page-link '>
                             {number}
                         </a>
                     </li>

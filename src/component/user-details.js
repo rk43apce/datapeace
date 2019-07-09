@@ -68,43 +68,43 @@ export default class UserDetails extends Component {
                                 <ul className="list-group list-group-flush">
                                     <li className="list-group-item d-flex justify-content-between align-items-center">
                                         Company
-                                        <span className="">{
+                                        <span className="text-muted">{
                                             `${ user[0].company_name}`}
                                         </span>
                                     </li>
                                     <li className="list-group-item d-flex justify-content-between align-items-center">
                                        City
-                                       <span className="">{
+                                       <span className="text-muted">{
                                             `${ user[0].city}`}
                                         </span>
                                     </li>
                                     <li className="list-group-item d-flex justify-content-between align-items-center">
                                         State
-                                        <span className="">{
+                                        <span className="text-muted">{
                                             `${ user[0].state}`}
                                         </span>
                                     </li>
                                     <li className="list-group-item d-flex justify-content-between align-items-center">
                                         Zip
-                                        <span className="">{
+                                        <span className="text-muted">{
                                             `${ user[0].zip}`}
                                         </span>
                                     </li>
                                     <li className="list-group-item d-flex justify-content-between align-items-center">
                                         Email
-                                        <span className="">{
+                                        <span className="text-muted">{
                                             `${ user[0].email}`}
                                         </span>
                                     </li>
                                     <li className="list-group-item d-flex justify-content-between align-items-center">
                                         Web
-                                        <span className="">{
+                                        <span className="text-muted">{
                                             `${ user[0].web}`}
                                         </span>
                                     </li>
                                     <li className="list-group-item d-flex justify-content-between align-items-center">
                                         Age
-                                        <span className="">{
+                                        <span className="text-muted">{
                                             `${ user[0].age}`}
                                         </span>
                                     </li>
