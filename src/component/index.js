@@ -7,8 +7,6 @@ import Loader from './loader';
 import Header from './header'
 
 
-
-
 export default class User extends Component {
 
     constructor(props){
@@ -19,7 +17,8 @@ export default class User extends Component {
             userPerPage:5,
             currentPage: 1,
             search:'',
-            loader:false
+            loader:false,
+            order: false
         }
     }
 
@@ -57,13 +56,11 @@ export default class User extends Component {
 
 
     render(){
+
             let {users, userPerPage, currentPage, search, loader} =  this.state
-
             users =  users.slice(1, 100);
-
             const indexOfLastUser = currentPage * userPerPage;       
-            const indexOfFirstUser = indexOfLastUser - userPerPage;  
-
+            const indexOfFirstUser = indexOfLastUser - userPerPage; 
             users = users.filter(user=>{           
                 return(
                     user.first_name.toLowerCase().search(search.toLowerCase()) !=-1
